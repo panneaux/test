@@ -1,0 +1,30 @@
+<tr><th colspan="2"align="left">Finistère </th> </tr>
+</tr><tr><th colspan="2"align="left"><br>Morbihan </th> </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Loire-Atlantique</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Vendée</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Charente-Maritime</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Gironde</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Landes</th>  </tr><tr>
+</tr><tr></tr><tr><th colspan="2"align="left"><br>Pyrénées-Atlantiques</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Meurthe-et-Moselle</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Meuse</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Nord</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Alpes-Maritimes</th>
+</tr><tr><th colspan="2"align="left"><br>Moselle</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Alpes-de-Haute-Provence</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Hautes-Alpes</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Jura</th>  </tr><tr>
+</tr><tr><th colspan="2"align="left"><br>Haute-Savoie</th>  </tr><tr>
+
+<tr>
+	<td align="center"><a href="/D:/MONSITE/Frontières/Suisse/index.html"><==Vers le nord</a></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td align="center"><a href="/D:/MONSITE/Frontières/Carte.html">Retour à la carte générale</a></td>
+	<td></td>
+	<td></td>
+        <td></td>
+	<td></td>
+	<td align="center"><a href="/D:/MONSITE/Frontières/Méditerranée/index.html">Vers l'Ouest==></a></td>
+</tr>

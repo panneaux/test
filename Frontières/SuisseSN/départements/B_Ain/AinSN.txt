@@ -1,0 +1,13 @@
+B01Pougny
+B02Challex
+B03Péron
+B04Saint-Jean-de-Gonville
+B05Thoiry
+B06Saint-Genis-Pouilly
+B07Prévessin-Moëns
+B08Ferney-Voltaire
+B09Ornex
+B10Versonnex
+B11Sauverny
+B12Grilly
+B13Divonne-les-Bains
