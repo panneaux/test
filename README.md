@@ -2,5 +2,3 @@
 
 http://panneaux.github.io/test
 
-Jusqu'au département 28
-
