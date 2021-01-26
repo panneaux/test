@@ -7,13 +7,13 @@ td.index_table_cell
 {
   width: 33%;
   padding: 5px;
-  border: solid 5px #000000;
+  border: solid 1px #000000;
 }
 
 td.index_subcat_table_cell
 {
   padding: 5px;
-  border: solid 5px #000000;
+  border: solid 1px #000000;
 }
 
 .gallerytitle {
