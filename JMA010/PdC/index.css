@@ -6,12 +6,14 @@
 td.index_table_cell
 {
   width: 34%;
+  vertical-align: top;
   padding: 5px;
   border: solid 1px #000000;
 }
 
 td.index_subcat_table_cell
 {
+  vertical-align: top;
   padding: 5px;
   border: solid 1px #000000;
 }
@@ -27,6 +29,7 @@ td.index_subcat_table_cell
 }
 
 .thumbnail {
+  margin-bottom: 1px;
   text-align: center;
 }
 
