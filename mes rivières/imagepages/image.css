@@ -1,0 +1,16 @@
+﻿body {
+  background-color: #FFFFFF;
+}
+
+.navigationtext {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigationdisabledtext {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #CCCCCC;
+}
+
+.imagetitle {
+  font-family: Arial, Helvetica, sans-serif;
+}
