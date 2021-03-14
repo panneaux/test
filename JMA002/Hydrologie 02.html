@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+      <title>Hydrologie 02</title>
+      <meta name="author" content="Jean Michel ANDRY" />
+      <meta name="title" content="Untitled Spreadsheet" />
+      <meta name="company" content="Microsoft Corporation" />
+    <style type="text/css" >
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
+      a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style1 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style1 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style2 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style2 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style3 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style3 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style4 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style4 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style5 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style5 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style6 { vertical-align:bottom; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style6 { vertical-align:bottom; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style7 { vertical-align:bottom; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style7 { vertical-align:bottom; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style8 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style8 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style9 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style9 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style10 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style10 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style11 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style11 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style12 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style12 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      table.sheet0 col.col0 { width:177.57777574pt }
+      table.sheet0 col.col1 { width:177.57777574pt }
+      table.sheet0 tr { height:15pt }
+      table.sheet0 tr.row0 { height:43.5pt }
+      table.sheet0 tr.row1 { height:15pt }
+      table.sheet0 tr.row2 { height:15pt }
+      table.sheet0 tr.row3 { height:15pt }
+      table.sheet0 tr.row4 { height:15pt }
+      table.sheet0 tr.row5 { height:15pt }
+      table.sheet0 tr.row6 { height:15pt }
+      table.sheet0 tr.row7 { height:15pt }
+      table.sheet0 tr.row8 { height:15pt }
+      table.sheet0 tr.row9 { height:15pt }
+      table.sheet0 tr.row10 { height:15pt }
+      table.sheet0 tr.row11 { height:15pt }
+      table.sheet0 tr.row12 { height:15pt }
+      table.sheet0 tr.row13 { height:15pt }
+      table.sheet0 tr.row14 { height:15pt }
+      table.sheet0 tr.row15 { height:15pt }
+      table.sheet0 tr.row16 { height:15pt }
+      table.sheet0 tr.row17 { height:15pt }
+      table.sheet0 tr.row18 { height:15pt }
+      table.sheet0 tr.row19 { height:15pt }
+      table.sheet0 tr.row20 { height:15pt }
+      table.sheet0 tr.row21 { height:15pt }
+      table.sheet0 tr.row22 { height:15pt }
+      table.sheet0 tr.row23 { height:15pt }
+      table.sheet0 tr.row24 { height:15pt }
+      table.sheet0 tr.row25 { height:15pt }
+      table.sheet0 tr.row26 { height:15pt }
+      table.sheet0 tr.row27 { height:15.75pt }
+      table.sheet0 tr.row28 { height:15.75pt }
+      table.sheet0 tr.row29 { height:15pt }
+      table.sheet0 tr.row30 { height:15pt }
+      table.sheet0 tr.row31 { height:15pt }
+      table.sheet0 tr.row32 { height:15pt }
+      table.sheet0 tr.row33 { height:15pt }
+      table.sheet0 tr.row34 { height:15pt }
+      table.sheet0 tr.row35 { height:15pt }
+      table.sheet0 tr.row36 { height:15pt }
+      table.sheet0 tr.row37 { height:15pt }
+      table.sheet0 tr.row38 { height:15pt }
+      table.sheet0 tr.row39 { height:15pt }
+      table.sheet0 tr.row40 { height:15pt }
+      table.sheet0 tr.row41 { height:15pt }
+      table.sheet0 tr.row42 { height:15pt }
+      table.sheet0 tr.row43 { height:15pt }
+      table.sheet0 tr.row44 { height:15pt }
+      table.sheet0 tr.row45 { height:15pt }
+      table.sheet0 tr.row46 { height:15pt }
+      table.sheet0 tr.row47 { height:15pt }
+      table.sheet0 tr.row48 { height:15pt }
+      table.sheet0 tr.row49 { height:15pt }
+      table.sheet0 tr.row50 { height:15pt }
+      table.sheet0 tr.row51 { height:15pt }
+      table.sheet0 tr.row52 { height:15pt }
+      table.sheet0 tr.row53 { height:15pt }
+      table.sheet0 tr.row54 { height:15pt }
+      table.sheet0 tr.row55 { height:15pt }
+      table.sheet0 tr.row56 { height:15pt }
+      table.sheet0 tr.row57 { height:15pt }
+      table.sheet0 tr.row58 { height:15pt }
+      table.sheet0 tr.row59 { height:15pt }
+      table.sheet0 tr.row60 { height:15pt }
+      table.sheet0 tr.row61 { height:15pt }
+      table.sheet0 tr.row62 { height:15pt }
+      table.sheet0 tr.row63 { height:15pt }
+      table.sheet0 tr.row64 { height:15pt }
+      table.sheet0 tr.row65 { height:15pt }
+      table.sheet0 tr.row66 { height:15pt }
+      table.sheet0 tr.row67 { height:15pt }
+      table.sheet0 tr.row68 { height:15pt }
+      table.sheet0 tr.row69 { height:15.75pt }
+    </style>
+  </head>
+
+  <body>
+  <p><H2><B> L'hydrographie du département de l'Aisne</B></H2></p> 
+ <p>Moins connu que le Massif central ou le plateau de Langres, l'extrémité Nord-Ouest de l'Aisne <br>constitue également un petit "château d'eau de la France" (et accessoirement de la Belgique). <br>
+On y trouve les sources de deux fleuves: la Somme et l'Escaut ainsi que d'une rivière affluent <br>de la Meuse: la Sambre. En outre l'Oise, née en Belgique entre en France par ce département <br>
+en formant sur 2.5 km une frontière naturelle avec la Belgique.</p>
+<p>Le département est traversé par la ligne de partage des eaux Manche-Mer du Nord sur laquelle <br>on trouve, à 9 km l'un de l'autre,
+  deux tripoints, le premier Meuse-Escaut-Seine se trouve sur le <br>territoire de Hannapes, le second Somme-Escaut-Seine à Aisonville-et-Bernonville</p>
+<p>La source de la Somme <I>(ci-dessous)</I> se trouve à Fonsomme à 86 m d'altitude,</p>
+<p><img src="SourcedelaSOMME.jpg"></p> <p>l'Escaut prend sa source à Gouy à 97 m et la Sambre à Fontenelle à 210 m</p>
+<p>Ce département s'étendant sur quatre bassins versants est également traversé par de <br>nombreux canaux et au sud par l'autre grand affluent de la Seine: la Marne </p> 
+  
+<style>
+@page { margin-left: 0.7in; margin-right: 0in; margin-top: 0.75in; margin-bottom: 0.75in; background-color: #26C4EC}
+body { margin-left: 0.7in; margin-right: 0in; margin-top: 0.75in; margin-bottom: 0.75in; background-color: #26C4EC}
+</style>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+        <col class="col0">
+        <col class="col1">
+        <tbody>
+          <tr class="row0">
+            <td class="column0 style1 s">Communes situées en tout <span style="color:#000000; font-family:'Calibri'; font-size:11pt">ou partie</span><span style="color:#000000; font-family:'Calibri'; font-size:11pt"> dans le bassin versant de l'Escaut</span></td>
+            <td class="column1 style1 s">Communes situées en tout <span style="color:#000000; font-family:'Calibri'; font-size:11pt">ou partie</span><span style="color:#000000; font-family:'Calibri'; font-size:11pt"> dans le bassin versant de la Sambre</span></td>
+          </tr>
+          <tr class="row1">
+            <td class="column0 style2 s">Aisonville-et-Bernoville</td>
+            <td class="column1 style2 s">Barzy-en-Thiérache</td>
+          </tr>
+          <tr class="row2">
+            <td class="column0 style2 s">Aubencheul-aux-Bois</td>
+            <td class="column1 style2 s">Bergues-sur-Sambre</td>
+          </tr>
+          <tr class="row3">
+            <td class="column0 style2 s">Beaurevoir</td>
+            <td class="column1 style2 s">Fesmy-le-Sart</td>
+          </tr>
+          <tr class="row4">
+            <td class="column0 style2 s">Becquigny</td>
+            <td class="column1 style2 s">Fontenelle</td>
+          </tr>
+          <tr class="row5">
+            <td class="column0 style2 s">Bohain-en-Vermandois</td>
+            <td class="column1 style2 s">Hannapes</td>
+          </tr>
+          <tr class="row6">
+            <td class="column0 style2 s">Bony</td>
+            <td class="column1 style2 s">La Flamengrie</td>
+          </tr>
+          <tr class="row7">
+            <td class="column0 style2 s">Brancourt-le-Grand</td>
+            <td class="column1 style2 s">Oisy</td>
+          </tr>
+          <tr class="row8">
+            <td class="column0 style2 s">Estrées</td>
+            <td class="column1 style2 s">Papleux</td>
+          </tr>
+          <tr class="row9">
+            <td class="column0 style2 s">Fresnoy-le-Grand</td>
+            <td class="column1 style2 s">Ribeauville</td>
+          </tr>
+          <tr class="row10">
+            <td class="column0 style2 s">Gouy</td>
+            <td class="column1 style2 s">Rocquigny</td>
+          </tr>
+          <tr class="row11">
+            <td class="column0 style2 s">Grougis</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row12">
+            <td class="column0 style2 s">Hannapes</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row13">
+            <td class="column0 style2 s">Joncourt</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row14">
+            <td class="column0 style2 s">La Vallée-Mulâtre</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row15">
+            <td class="column0 style2 s">Le Catelet</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row16">
+            <td class="column0 style2 s">Lempire</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row17">
+            <td class="column0 style2 s">Mennevret</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row18">
+            <td class="column0 style2 s">Molain</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row19">
+            <td class="column0 style2 s">Montbrehain</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row20">
+            <td class="column0 style2 s">Prémont</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row21">
+            <td class="column0 style2 s">Ramicourt</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row22">
+            <td class="column0 style2 s">Saint-Martin-Rivière</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row23">
+            <td class="column0 style2 s">Seboncourt</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row24">
+            <td class="column0 style2 s">Serain</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row25">
+            <td class="column0 style2 s">Vaux-Andigny</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row26">
+            <td class="column0 style2 s">Vendhuile</td>
+            <td class="column1 style2 null"></td>
+          </tr>
+          <tr class="row27">
+            <td class="column0 style3 s">Wassigny</td>
+            <td class="column1 style3 null"></td>
+          </tr>
+          <tr class="row28">
+            <td class="column0 style4 s style5" colspan="2">Communes situées en tout <span style="color:#000000; font-family:'Calibri'; font-size:11pt">ou partie</span><span style="color:#000000; font-family:'Calibri'; font-size:11pt"> dans le bassin versant de la Somme</span></td>
+          </tr>
+          <tr class="row29">
+            <td class="column0 style6 s">Aisonville-et-Bernoville</td>
+            <td class="column1 style7 s">Hinacourt</td>
+          </tr>
+          <tr class="row30">
+            <td class="column0 style8 s">Annois</td>
+            <td class="column1 style9 s">Holnon</td>
+          </tr>
+          <tr class="row31">
+            <td class="column0 style8 s">Artemps</td>
+            <td class="column1 style9 s">Homblières</td>
+          </tr>
+          <tr class="row32">
+            <td class="column0 style8 s">Attilly</td>
+            <td class="column1 style9 s">Jeancourt</td>
+          </tr>
+          <tr class="row33">
+            <td class="column0 style8 s">Aubigny-aux-Kaisnes</td>
+            <td class="column1 style9 s">Jussy</td>
+          </tr>
+          <tr class="row34">
+            <td class="column0 style8 s">Beaumont-en-Beine</td>
+            <td class="column1 style9 s">Lanchy</td>
+          </tr>
+          <tr class="row35">
+            <td class="column0 style8 s">Beauvois-en-Vermandois</td>
+            <td class="column1 style9 s">Le Verguier</td>
+          </tr>
+          <tr class="row36">
+            <td class="column0 style8 s">Bellenglise</td>
+            <td class="column1 style9 s">Lehaucourt</td>
+          </tr>
+          <tr class="row37">
+            <td class="column0 style8 s">Bellicourt</td>
+            <td class="column1 style9 s">Lesdins</td>
+          </tr>
+          <tr class="row38">
+            <td class="column0 style8 s">Bray-Saint-Christophe</td>
+            <td class="column1 style9 s">Levergies</td>
+          </tr>
+          <tr class="row39">
+            <td class="column0 style8 s">Castres</td>
+            <td class="column1 style9 s">Magny-la-Fosse</td>
+          </tr>
+          <tr class="row40">
+            <td class="column0 style8 s">Caulaincourt</td>
+            <td class="column1 style9 s">Maissemy</td>
+          </tr>
+          <tr class="row41">
+            <td class="column0 style8 s">Clastres</td>
+            <td class="column1 style9 s">Marcy</td>
+          </tr>
+          <tr class="row42">
+            <td class="column0 style8 s">Contescourt</td>
+            <td class="column1 style9 s">Mesnil-Saint-Laurent</td>
+          </tr>
+          <tr class="row43">
+            <td class="column0 style8 s">Croix-Fonsomme</td>
+            <td class="column1 style9 s">Montescourt-Lizerolles</td>
+          </tr>
+          <tr class="row44">
+            <td class="column0 style8 s">Cugny</td>
+            <td class="column1 style9 s">Montigny-en-Arrouaise</td>
+          </tr>
+          <tr class="row45">
+            <td class="column0 style8 s">Dallon</td>
+            <td class="column1 style9 s">Morcourt</td>
+          </tr>
+          <tr class="row46">
+            <td class="column0 style8 s">Douchy</td>
+            <td class="column1 style9 s">Nauroy</td>
+          </tr>
+          <tr class="row47">
+            <td class="column0 style8 s">Dury</td>
+            <td class="column1 style9 s">Neuville-Saint-Amand</td>
+          </tr>
+          <tr class="row48">
+            <td class="column0 style8 s">Essigny-le-Grand</td>
+            <td class="column1 style9 s">Ollezy</td>
+          </tr>
+          <tr class="row49">
+            <td class="column0 style8 s">Essigny-le-Petit</td>
+            <td class="column1 style9 s">Omissy</td>
+          </tr>
+          <tr class="row50">
+            <td class="column0 style8 s">Étaves-et-Bocquiaux</td>
+            <td class="column1 style9 s">Pithon</td>
+          </tr>
+          <tr class="row51">
+            <td class="column0 style8 s">Étreillers</td>
+            <td class="column1 style9 s">Pontru</td>
+          </tr>
+          <tr class="row52">
+            <td class="column0 style8 s">Fayet</td>
+            <td class="column1 style9 s">Pontruet</td>
+          </tr>
+          <tr class="row53">
+            <td class="column0 style8 s">Fieulaine</td>
+            <td class="column1 style9 s">Remaucourt</td>
+          </tr>
+          <tr class="row54">
+            <td class="column0 style8 s">Flavy-le-Martel</td>
+            <td class="column1 style9 s">Roupy</td>
+          </tr>
+          <tr class="row55">
+            <td class="column0 style8 s">Fluquières</td>
+            <td class="column1 style9 s">Rouvroy</td>
+          </tr>
+          <tr class="row56">
+            <td class="column0 style8 s">Fonsomme</td>
+            <td class="column1 style9 s">Saint-Quentin</td>
+          </tr>
+          <tr class="row57">
+            <td class="column0 style8 s">Fontaine-lès-Clercs</td>
+            <td class="column1 style9 s">Saint-Simon</td>
+          </tr>
+          <tr class="row58">
+            <td class="column0 style8 s">Fontaine-Notre-Dame</td>
+            <td class="column1 style9 s">Savy</td>
+          </tr>
+          <tr class="row59">
+            <td class="column0 style8 s">Fontaine-Uterte</td>
+            <td class="column1 style9 s">Sequehart</td>
+          </tr>
+          <tr class="row60">
+            <td class="column0 style8 s">Foreste</td>
+            <td class="column1 style9 s">Seraucourt-le-Grand</td>
+          </tr>
+          <tr class="row61">
+            <td class="column0 style8 s">Francilly-Selency</td>
+            <td class="column1 style9 s">Sommette-Eaucourt</td>
+          </tr>
+          <tr class="row62">
+            <td class="column0 style8 s">Gauchy</td>
+            <td class="column1 style9 s">Trefcon</td>
+          </tr>
+          <tr class="row63">
+            <td class="column0 style8 s">Germaine</td>
+            <td class="column1 style9 s">Tugny-et-Pont</td>
+          </tr>
+          <tr class="row64">
+            <td class="column0 style8 s">Gibercourt</td>
+            <td class="column1 style9 s">Urvillers</td>
+          </tr>
+          <tr class="row65">
+            <td class="column0 style8 s">Gricourt</td>
+            <td class="column1 style9 s">Vaux-en-Vermandois</td>
+          </tr>
+          <tr class="row66">
+            <td class="column0 style8 s">Grugies</td>
+            <td class="column1 style9 s">Vendelles</td>
+          </tr>
+          <tr class="row67">
+            <td class="column0 style8 s">Happencourt</td>
+            <td class="column1 style10 s">Vermand</td>
+          </tr>
+          <tr class="row68">
+            <td class="column0 style8 s">Hargicourt</td>
+            <td class="column1 style9 s">Villeret</td>
+          </tr>
+          <tr class="row69">
+            <td class="column0 style11 s">Harly</td>
+            <td class="column1 style12 s">Villers-Saint-Christophe</td>
+          </tr>
+        </tbody>
+    </table>
+	<p>Les communes non listées ci-dessus sont situées dans le bassin versant de la Seine</p>
+	<br><p align="center"><a href="index02.html" target="_top">Retour</a></p>
+  </body>
+</html>
