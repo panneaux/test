@@ -21,6 +21,11 @@ td.index_subcat_table_cell
   font-size: 14pt;
 }
 
+.subcategorythumbnailtitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}
+
 .thumbnailtitle {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
@@ -31,6 +36,15 @@ td.index_subcat_table_cell
 }
 
 .thumbnail_title {
+
+  text-align: center;
+}
+
+.subcategory_thumbnail {
+  text-align: center;
+}
+
+.subcategory_thumbnail_title {
 
   text-align: center;
 }
