@@ -1,13 +1,8 @@
-﻿table.index_table
+﻿td.index_table_cell
 {
-  border-collapse: collapse;
-}
-
-td.index_table_cell
-{
-  width: 14%;
+  width: 10%;
   padding: 5px;
-  border: solid 1px #000000;
+  border: none;
 }
 
 td.index_subcat_table_cell
