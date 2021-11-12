@@ -5,9 +5,9 @@
 
 td.index_table_cell
 {
-  width: 17%;
+  width: 12%;
   padding: 5px;
-  border: solid 1px #000000;
+  border: none;
 }
 
 td.index_subcat_table_cell
