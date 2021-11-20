@@ -1,21 +1,16 @@
-﻿table.index_table
-{
-  border-collapse: collapse;
-}
-
-td.index_table_cell
+﻿td.index_table_cell
 {
   width: 20%;
   vertical-align: top;
   padding: 5px;
-  border: solid 5px #000000;
+  border: none;
 }
 
 td.index_subcat_table_cell
 {
   vertical-align: top;
   padding: 5px;
-  border: solid 5px #000000;
+  border: none;
 }
 
 .gallerytitle {
