@@ -10,16 +10,10 @@
 // <![CDATA[
 // Copyright 2001-2012 Digital Dutch (www.digitaldutch.com)
 
-function gotonewpage(what) {
-  value = what.options[what.selectedIndex].value;
-  if (value == "") return;
-  window.location.href = value;
-}
-
 function PageLoaded() {
 
   imagepreload = new Image;
-  imagepreload.src = "../images/Ch%C3%A2teauneuf-en-Thymerais%20%2028.JPG";
+  imagepreload.src = "../images/Ch%C3%A2teauneuf-en-Thymerais.JPG";
 }
 
 window.onload=PageLoaded;
@@ -36,7 +30,24 @@ window.onload=PageLoaded;
 
 
 
-<!-- BeginNavigationTop -->
+
+
+<div align="center">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr align="center">
+    <td>
+      <a href="image2.html"><img src="../images/Bailleau-l'Ev%C3%AAque.JPG" alt="Bailleau-l'Evêque.JPG" title="Bailleau-l'Evêque.JPG" width="600" height="450" border="0" /></a>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <div class="imagetitle">Bailleau-l'Evêque</div>
+    </td>
+  </tr>
+</table>
+</div>
+
+<!-- BeginNavigationBottom -->
 <table width="100%">
   <tr>
     <td align="center"><!-- BeginNavigationGroup -->
@@ -54,46 +65,14 @@ window.onload=PageLoaded;
 </table>
 <!-- EndNavigationGroup -->
 
-<!-- BeginNavigationGroup -->
-<table cellpadding="3" cellspacing="0" border="0">
-  <tr>
-    <!-- BeginNavigationElement --><td><form style="margin-bottom:0;" name="form1" action=""><select name="imagelist" class="imagequicklist" onchange="gotonewpage(this)">
-  <option selected="selected" value="image1.html">1 Bailleau-l'Evêque</option>
-  <option value="image2.html">2 Châteauneuf-en-Thymerais  28</option>
-  <option value="image3.html">3 Saint-Ange-et-Torçay 28</option>
-  <option value="image4.html">4 Saint-Rémy-sur Avre 28</option>
-</select></form></td><!-- EndNavigationElement -->
-    <!-- BeginNavigationSubGroup --><td>
-      
-      <!-- BeginNavigationElement --> <span class="navigationtext">of&nbsp;4</span><!-- EndNavigationElement -->
-    </td><!-- EndNavigationSubGroup -->
-  </tr>
-</table>
-<!-- EndNavigationGroup -->
+
 
 
 
 </td>
   </tr>
 </table>
-<!-- EndNavigationTop -->
-
-<div align="center">
-<table cellspacing="0" cellpadding="0" border="0">
-  <tr align="center">
-    <td>
-      <a href="image2.html"><img src="../images/Bailleau-l'Ev%C3%AAque.JPG" alt="Bailleau-l'Evêque.JPG" title="Bailleau-l'Evêque.JPG" width="600" height="450" border="0" /></a>
-    </td>
-  </tr>
-  <tr align="center">
-    <td>
-      <div class="imagetitle">Bailleau-l'Evêque</div>
-    </td>
-  </tr>
-</table>
-</div>
-
-
+<!-- EndNavigationBottom -->
 
 
 
