@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+      <title>Untitled Spreadsheet</title>
+      <meta name="author" content="Jean Michel ANDRY" />
+      <meta name="title" content="Untitled Spreadsheet" />
+      <meta name="company" content="Microsoft Corporation" />
+    <style type="text/css">
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
+      a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style1 { vertical-align:bottom; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style1 { vertical-align:bottom; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style2 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style2 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style3 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style3 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style4 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style4 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style5 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style5 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style6 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style6 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style7 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style7 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style8 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#0000FF; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style8 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#0000FF; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style9 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style9 { vertical-align:bottom; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style10 { vertical-align:bottom; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style10 { vertical-align:bottom; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style11 { vertical-align:bottom; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style11 { vertical-align:bottom; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style12 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style12 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style13 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style13 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style14 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style14 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style15 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style15 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style16 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style16 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style17 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style17 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style18 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style18 { vertical-align:bottom; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style19 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Arial'; font-size:10pt; background-color:#FFFFFF }
+      th.style19 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Arial'; font-size:10pt; background-color:#FFFFFF }
+      td.style20 { vertical-align:bottom; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style20 { vertical-align:bottom; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style21 { vertical-align:bottom; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style21 { vertical-align:bottom; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style22 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style22 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style23 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Arial'; font-size:10pt; background-color:#FFFFFF }
+      th.style23 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Arial'; font-size:10pt; background-color:#FFFFFF }
+      td.style24 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Arial'; font-size:10pt; background-color:#FFFFFF }
+      th.style24 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Arial'; font-size:10pt; background-color:#FFFFFF }
+      td.style25 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style25 { vertical-align:middle; border-bottom:none #000000; border-top:2px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style26 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style26 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style27 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style27 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style28 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style28 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style29 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style29 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style30 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style30 { vertical-align:middle; border-bottom:none #000000; border-top:1px solid #000000 !important; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style31 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style31 { vertical-align:middle; border-bottom:1px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style32 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style32 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style33 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style33 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style34 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style34 { vertical-align:middle; border-bottom:none #000000; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style35 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style35 { vertical-align:middle; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:1px solid #000000 !important; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style36 { vertical-align:bottom; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style36 { vertical-align:bottom; text-align:center; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      table.sheet0 col.col0 { width:146.39999832pt }
+      table.sheet0 col.col1 { width:157.92222041pt }
+      table.sheet0 col.col2 { width:143.01110947pt }
+      table.sheet0 col.col3 { width:151.82222048pt }
+      table.sheet0 tr { height:15pt }
+      table.sheet0 tr.row0 { height:15.75pt }
+      table.sheet0 tr.row1 { height:15.75pt }
+      table.sheet0 tr.row2 { height:15pt }
+      table.sheet0 tr.row3 { height:15pt }
+      table.sheet0 tr.row4 { height:15pt }
+      table.sheet0 tr.row5 { height:15pt }
+      table.sheet0 tr.row6 { height:15pt }
+      table.sheet0 tr.row7 { height:15pt }
+      table.sheet0 tr.row8 { height:15pt }
+      table.sheet0 tr.row9 { height:15pt }
+      table.sheet0 tr.row10 { height:15pt }
+      table.sheet0 tr.row11 { height:15pt }
+      table.sheet0 tr.row12 { height:15.75pt }
+      table.sheet0 tr.row13 { height:15.75pt }
+      table.sheet0 tr.row14 { height:15pt }
+      table.sheet0 tr.row15 { height:15pt }
+      table.sheet0 tr.row16 { height:15pt }
+      table.sheet0 tr.row17 { height:15pt }
+      table.sheet0 tr.row18 { height:15pt }
+      table.sheet0 tr.row19 { height:15pt }
+      table.sheet0 tr.row20 { height:15pt }
+      table.sheet0 tr.row21 { height:15pt }
+      table.sheet0 tr.row22 { height:15pt }
+      table.sheet0 tr.row23 { height:15pt }
+      table.sheet0 tr.row24 { height:15.75pt }
+      table.sheet0 tr.row25 { height:15pt }
+      table.sheet0 tr.row26 { height:15pt }
+    </style>
+  </head>
+
+  <body>
+<style>
+@page { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+</style>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+        <col class="col0">
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <tbody>
+          <tr class="row0">
+            <td class="column0 style20 s style21" colspan="2">2015=&gt;2016</td>
+            <td class="column2 style20 s style22" colspan="2">2016=&gt;2017</td>
+          </tr>
+          <tr class="row1">
+            <td class="column0 style36 s">ancienne commune</td>
+            <td class="column1 style1 s">nouvelle entité</td>
+            <td class="column2 style1 s">ancienne commune</td>
+            <td class="column3 style1 s">nouvelle entité</td>
+          </tr>
+          <tr class="row2">
+            <td class="column0 style11 s">Molineuf</td>
+            <td class="column1 style23 s style24" rowspan="2">Valencisse</td>
+            <td class="column2 style13 s">Chouzy-sur-Cisse</td>
+            <td class="column3 style25 s style27" rowspan="3">Valloire-sur-Cisse</td>
+          </tr>
+          <tr class="row3">
+            <td class="column0 style9 s">Orchaise</td>
+            <td class="column2 style3 s">Coulanges</td>
+          </tr>
+          <tr class="row4">
+            <td class="column0 style2 s">Montrichard</td>
+            <td class="column1 style28 s style29" rowspan="2">Montrichard Val de Cher</td>
+            <td class="column2 style12 s">Seillac</td>
+          </tr>
+          <tr class="row5">
+            <td class="column0 style9 s">Bourré</td>
+            <td class="column2 style3 s">Valencisse</td>
+            <td class="column3 style30 s style31" rowspan="2">Valencisse</td>
+          </tr>
+          <tr class="row6">
+            <td class="column0 style2 s">Ouzouer-le-Marché</td>
+            <td class="column1 style28 s style33" rowspan="7">Beauce la Romaine</td>
+            <td class="column2 style12 s">Chambon-sur-Cisse</td>
+          </tr>
+          <tr class="row7">
+            <td class="column0 style2 s">Colombe (La)</td>
+            <td class="column2 style3 s">Onzain</td>
+            <td class="column3 style30 s style31" rowspan="2">Veuzain-sur-Loire</td>
+          </tr>
+          <tr class="row8">
+            <td class="column0 style2 s">Membrolles</td>
+            <td class="column2 style12 s">Veuves</td>
+          </tr>
+          <tr class="row9">
+            <td class="column0 style2 s">Prénouvellon</td>
+            <td class="column2 style3 s">Oucques</td>
+            <td class="column3 style30 s style35" rowspan="4">Oucques La Nouvelle</td>
+          </tr>
+          <tr class="row10">
+            <td class="column0 style2 s">Semerville</td>
+            <td class="column2 style3 s">Baigneaux</td>
+          </tr>
+          <tr class="row11">
+            <td class="column0 style2 s">Tripleville</td>
+            <td class="column2 style3 s">Beauvilliers</td>
+          </tr>
+          <tr class="row12">
+            <td class="column0 style4 s">Verdes</td>
+            <td class="column2 style14 s">Sainte-Gemmes</td>
+          </tr>
+          <tr class="row13">
+            <td class="column0 style5 null"></td>
+            <td class="column1 style5 null"></td>
+            <td class="column2 style5 null"></td>
+            <td class="column3 style5 null"></td>
+          </tr>
+          <tr class="row14">
+            <td class="column0 style11 s">Bourré</td>
+            <td class="column1 style10 s">Montrichard Val de Cher</td>
+            <td class="column2 style13 s">Baigneaux</td>
+            <td class="column3 style15 s">Oucques La Nouvelle</td>
+          </tr>
+          <tr class="row15">
+            <td class="column0 style2 s">La Colombe</td>
+            <td class="column1 style6 s">Beauce la Romaine</td>
+            <td class="column2 style3 s">Beauvilliers</td>
+            <td class="column3 style16 s">Oucques La Nouvelle</td>
+          </tr>
+          <tr class="row16">
+            <td class="column0 style2 s">Membrolles</td>
+            <td class="column1 style6 s">Beauce la Romaine</td>
+            <td class="column2 style3 s">Chambon-sur-Cisse</td>
+            <td class="column3 style16 s">Valencisse</td>
+          </tr>
+          <tr class="row17">
+            <td class="column0 style2 s">Molineuf</td>
+            <td class="column1 style19 s">Valencisse</td>
+            <td class="column2 style3 s">Chouzy-sur-Cisse</td>
+            <td class="column3 style17 s">Valloire-sur-Cisse</td>
+          </tr>
+          <tr class="row18">
+            <td class="column0 style2 s">Montrichard</td>
+            <td class="column1 style6 s">Montrichard Val de Cher</td>
+            <td class="column2 style3 s">Coulanges</td>
+            <td class="column3 style17 s">Valloire-sur-Cisse</td>
+          </tr>
+          <tr class="row19">
+            <td class="column0 style2 s">Orchaise</td>
+            <td class="column1 style6 s">Valencisse</td>
+            <td class="column2 style3 s">Onzain</td>
+            <td class="column3 style16 s">Veuzain-sur-Loire</td>
+          </tr>
+          <tr class="row20">
+            <td class="column0 style2 s">Ouzouer-le-Marché</td>
+            <td class="column1 style6 s">Beauce la Romaine</td>
+            <td class="column2 style3 s">Oucques</td>
+            <td class="column3 style16 s">Oucques La Nouvelle</td>
+          </tr>
+          <tr class="row21">
+            <td class="column0 style2 s">Prénouvellon</td>
+            <td class="column1 style6 s">Beauce la Romaine</td>
+            <td class="column2 style3 s">Sainte-Gemmes</td>
+            <td class="column3 style16 s">Oucques La Nouvelle</td>
+          </tr>
+          <tr class="row22">
+            <td class="column0 style2 s">Semerville</td>
+            <td class="column1 style6 s">Beauce la Romaine</td>
+            <td class="column2 style3 s">Seillac</td>
+            <td class="column3 style17 s">Valloire-sur-Cisse</td>
+          </tr>
+          <tr class="row23">
+            <td class="column0 style2 s">Tripleville</td>
+            <td class="column1 style6 s">Beauce la Romaine</td>
+            <td class="column2 style3 s">Valencisse</td>
+            <td class="column3 style16 s">Valencisse</td>
+          </tr>
+          <tr class="row24">
+            <td class="column0 style4 s">Verdes</td>
+            <td class="column1 style7 s">Beauce la Romaine</td>
+            <td class="column2 style14 s">Veuves</td>
+            <td class="column3 style18 s">Veuzain-sur-Loire</td>
+          </tr>
+          <tr class="row25">
+            <td class="column0 style5 null"></td>
+            <td class="column1 style5 null"></td>
+            <td class="column2 style5 null"></td>
+            <td class="column3 style5 null"></td>
+          </tr>
+          <tr class="row26">
+            <td class="column0 style8 s"><a href="index.html" title="">retour au Loir-et-Cher historique</a></td>
+            <td class="column1 style5 null"></td>
+            <td class="column2 style5 null"></td>
+            <td class="column3 style5 null"></td>
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
