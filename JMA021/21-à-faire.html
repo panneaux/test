@@ -1,0 +1,882 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+      <title>Untitled Spreadsheet</title>
+      <meta name="author" content="Jean Michel ANDRY" />
+      <meta name="title" content="Untitled Spreadsheet" />
+      <meta name="company" content="Microsoft Corporation" />
+    <style type="text/css">
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
+      a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style1 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style1 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style2 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style2 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style3 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style3 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style4 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style4 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style5 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style5 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style6 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style6 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style7 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style7 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style8 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style8 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style9 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style9 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style10 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:8pt; background-color:#FFFFFF }
+      th.style10 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:8pt; background-color:#FFFFFF }
+      td.style11 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style11 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style12 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style12 { vertical-align:bottom; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style13 { vertical-align:middle; text-align:right; padding-right:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#0000FF; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style13 { vertical-align:middle; text-align:right; padding-right:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#0000FF; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style14 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style14 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style15 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style15 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style16 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style16 { vertical-align:middle; text-align:center; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style17 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style17 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style18 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style18 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:2px solid #000000 !important; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style19 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style19 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style20 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style20 { vertical-align:middle; text-align:center; border-bottom:2px solid #000000 !important; border-top:2px solid #000000 !important; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style21 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#0000FF; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style21 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; text-decoration:underline; color:#0000FF; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style22 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style22 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style23 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style23 { vertical-align:middle; text-align:left; padding-left:0px; border-bottom:2px solid #000000 !important; border-top:none #000000; border-left:2px solid #000000 !important; border-right:none #000000; color:#FF0000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      td.style24 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      th.style24 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:2px solid #000000 !important; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:#FFFFFF }
+      table.sheet0 col.col0 { width:151.82222048pt }
+      table.sheet0 col.col1 { width:153.17777602pt }
+      table.sheet0 col.col2 { width:147.75555386pt }
+      table.sheet0 col.col3 { width:145.72222055pt }
+      table.sheet0 col.col4 { width:151.14444271pt }
+      table.sheet0 col.col5 { width:159.27777595pt }
+      table.sheet0 col.col6 { width:153.85555379pt }
+      table.sheet0 col.col7 { width:138.94444285pt }
+      table.sheet0 col.col8 { width:149.1111094pt }
+      table.sheet0 col.col9 { width:0pt }
+      table.sheet0 col.col10 { width:0pt }
+      table.sheet0 col.col11 { width:0pt }
+      table.sheet0 tr { height:15pt }
+      table.sheet0 tr.row0 { height:15.75pt }
+      table.sheet0 tr.row1 { height:15pt }
+      table.sheet0 tr.row2 { height:15pt }
+      table.sheet0 tr.row3 { height:15pt }
+      table.sheet0 tr.row4 { height:15pt }
+      table.sheet0 tr.row5 { height:15pt }
+      table.sheet0 tr.row6 { height:15pt }
+      table.sheet0 tr.row7 { height:15pt }
+      table.sheet0 tr.row8 { height:15pt }
+      table.sheet0 tr.row9 { height:15pt }
+      table.sheet0 tr.row10 { height:15pt }
+      table.sheet0 tr.row11 { height:15pt }
+      table.sheet0 tr.row12 { height:15pt }
+      table.sheet0 tr.row13 { height:15pt }
+      table.sheet0 tr.row14 { height:15pt }
+      table.sheet0 tr.row15 { height:15pt }
+      table.sheet0 tr.row16 { height:15pt }
+      table.sheet0 tr.row17 { height:15pt }
+      table.sheet0 tr.row18 { height:15pt }
+      table.sheet0 tr.row19 { height:15pt }
+      table.sheet0 tr.row20 { height:15pt }
+      table.sheet0 tr.row21 { height:15pt }
+      table.sheet0 tr.row22 { height:15pt }
+      table.sheet0 tr.row23 { height:15pt }
+      table.sheet0 tr.row24 { height:15pt }
+      table.sheet0 tr.row25 { height:15pt }
+      table.sheet0 tr.row26 { height:15pt }
+      table.sheet0 tr.row27 { height:15pt }
+      table.sheet0 tr.row28 { height:15pt }
+      table.sheet0 tr.row29 { height:15pt }
+      table.sheet0 tr.row30 { height:15pt }
+      table.sheet0 tr.row31 { height:15pt }
+      table.sheet0 tr.row32 { height:15pt }
+      table.sheet0 tr.row33 { height:15pt }
+      table.sheet0 tr.row34 { height:15pt }
+      table.sheet0 tr.row35 { height:15pt }
+      table.sheet0 tr.row36 { height:15pt }
+      table.sheet0 tr.row37 { height:15pt }
+      table.sheet0 tr.row38 { height:15pt }
+      table.sheet0 tr.row39 { height:15pt }
+      table.sheet0 tr.row40 { height:15pt }
+      table.sheet0 tr.row41 { height:15pt }
+      table.sheet0 tr.row42 { height:15pt }
+      table.sheet0 tr.row43 { height:15pt }
+      table.sheet0 tr.row44 { height:15pt }
+      table.sheet0 tr.row45 { height:13.5pt }
+      table.sheet0 tr.row46 { height:15pt }
+      table.sheet0 tr.row47 { height:15pt }
+      table.sheet0 tr.row48 { height:15.75pt }
+      table.sheet0 tr.row49 { height:15pt }
+      table.sheet0 tr.row50 { height:15pt }
+      table.sheet0 tr.row51 { height:15pt }
+    </style>
+  </head>
+
+  <body>
+<style>
+@page { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+</style>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+        <col class="col0">
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <col class="col4">
+        <col class="col5">
+        <col class="col6">
+        <col class="col7">
+        <col class="col8">
+        <col class="col9">
+        <col class="col10">
+        <col class="col11">
+        <tbody>
+          <tr class="row0">
+            <td class="column0 style18 s style20" colspan="9">à photographier ou<span style="color:#FF0000; font-family:'Calibri'; font-size:11pt"> rephotographier</span></td>
+             
+             
+             
+          </tr>
+          <tr class="row1">
+            <td class="column0 style3 s">Agencourt</td>
+            <td class="column1 style4 s">Binges</td>
+            <td class="column2 style4 s">Chazeuil</td>
+            <td class="column3 style6 s">Esbarres</td>
+            <td class="column4 style4 s">Izier</td>
+            <td class="column5 style4 s">Marsannay-la-Côte</td>
+            <td class="column6 style4 s">Pichanges</td>
+            <td class="column7 style4 s">Saint-Marc-sur-Seine</td>
+            <td class="column8 style5 s">Tillenay</td>
+             
+             
+             
+          </tr>
+          <tr class="row2">
+            <td class="column0 style3 s">Agey</td>
+            <td class="column1 style4 s">Blagny-sur-Vingeanne</td>
+            <td class="column2 style6 s">Chemin-d'Aisey</td>
+            <td class="column3 style4 s">Essarois</td>
+            <td class="column4 style4 s">Jailly-les-Moulins</td>
+            <td class="column5 style4 s">Marsannay-le-Bois</td>
+            <td class="column6 style4 s">Planay</td>
+            <td class="column7 style4 s">Saint-Martin-du-Mont</td>
+            <td class="column8 style5 s">Touillon</td>
+             
+             
+             
+          </tr>
+          <tr class="row3">
+            <td class="column0 style3 s">Ahuy</td>
+            <td class="column1 style4 s">Blaisy-Bas</td>
+            <td class="column2 style4 s">Chenôve</td>
+            <td class="column3 style6 s">Étais</td>
+            <td class="column4 style6 s">Jancigny</td>
+            <td class="column5 style6 s">Massingy-lès-Semur</td>
+            <td class="column6 style4 s">Plombières-lès-Dijon</td>
+            <td class="column7 style6 s">Saint-Maurice-sur-Vingeanne</td>
+            <td class="column8 style7 s">Tréclun</td>
+             
+             
+             
+          </tr>
+          <tr class="row4">
+            <td class="column0 style3 s">Aignay-le-Duc</td>
+            <td class="column1 style6 s">Blaisy-Haut</td>
+            <td class="column2 style4 s">Cheuge</td>
+            <td class="column3 style6 s">Étalante</td>
+            <td class="column4 style6 s">Juillenay</td>
+            <td class="column5 style6 s">Massingy-lès-Vitteaux</td>
+            <td class="column6 style4 s">Pluvault</td>
+            <td class="column7 style4 s">Saint-Mesmin</td>
+            <td class="column8 style7 s">Trochères</td>
+             
+             
+             
+          </tr>
+          <tr class="row5">
+            <td class="column0 style3 s">Aiserey</td>
+            <td class="column1 style4 s">Bligny-le-Sec</td>
+            <td class="column2 style6 s">Chevannay</td>
+            <td class="column3 style6 s">Étaules</td>
+            <td class="column4 style6 s">Juilly</td>
+            <td class="column5 style6 s">Mauvilly</td>
+            <td class="column6 style4 s">Pluvet</td>
+            <td class="column7 style4 s">Saint-Nicolas-lès-Cîteaux</td>
+            <td class="column8 style7 s">Trouhans</td>
+             
+             
+             
+          </tr>
+          <tr class="row6">
+            <td class="column0 style3 s">Aisey-sur-Seine</td>
+            <td class="column1 style4 s">Boncourt-le-Bois</td>
+            <td class="column2 style6 s">Chevannes</td>
+            <td class="column3 style4 s">Étevaux</td>
+            <td class="column4 style4 s">L' Étang-Vergy</td>
+            <td class="column5 style4 s">Maxilly-sur-Saône</td>
+            <td class="column6 style4 s">Poiseul-la-Grange</td>
+            <td class="column7 style4 s">Saint-Philibert</td>
+            <td class="column8 style7 s">Trouhaut</td>
+             
+             
+             
+          </tr>
+          <tr class="row7">
+            <td class="column0 style3 s">Alise-Sainte-Reine</td>
+            <td class="column1 style4 s">Bonnencontre</td>
+            <td class="column2 style4 s">Chevigny-Saint-Sauveur</td>
+            <td class="column3 style6 s">Étormay</td>
+            <td class="column4 style4 s">La Bussière-sur-Ouche</td>
+            <td class="column5 style4 s">Ménétreux-le-Pitois</td>
+            <td class="column6 style6 s">Poiseul-la-Ville-et-Laperrière</td>
+            <td class="column7 style4 s">Saint-Sauveur</td>
+            <td class="column8 style7 s">Turcey</td>
+             
+             
+             
+          </tr>
+          <tr class="row8">
+            <td class="column0 style3 s">Ampilly-les-Bordes</td>
+            <td class="column1 style4 s">Bourberain</td>
+            <td class="column2 style6 s">Cirey-lès-Pontailler</td>
+            <td class="column3 style4 s">Fain-lès-Montbard</td>
+            <td class="column4 style4 s">La Motte-Ternant</td>
+            <td class="column5 style4 s">Mesmont</td>
+            <td class="column6 style6 s">Poiseul-lès-Saulx</td>
+            <td class="column7 style4 s">Saint-Seine-en-Bâche</td>
+            <td class="column8 style7 s">Uncey-le-Franc</td>
+             
+             
+             
+          </tr>
+          <tr class="row9">
+            <td class="column0 style3 s">Ancey</td>
+            <td class="column1 style4 s">Bousselange</td>
+            <td class="column2 style6 s">Civry-en-Montagne</td>
+            <td class="column3 style4 s">Fauverney</td>
+            <td class="column4 style4 s">La Roche-Vanneau</td>
+            <td class="column5 style4 s">Messanges</td>
+            <td class="column6 style4 s">Poncey-lès-Athée</td>
+            <td class="column7 style4 s">Saint-Seine-sur-Vingeanne</td>
+            <td class="column8 style7 s">Urcy</td>
+             
+             
+             
+          </tr>
+          <tr class="row10">
+            <td class="column0 style8 s">Antheuil</td>
+            <td class="column1 style4 s">Boussey</td>
+            <td class="column2 style4 s">Clémencey</td>
+            <td class="column3 style4 s">Fénay</td>
+            <td class="column4 style4 s">La Villeneuve-les-Convers</td>
+            <td class="column5 style4 s">Messigny-et-Vantoux</td>
+            <td class="column6 style4 s">Poncey-sur-l'Ignon</td>
+            <td class="column7 style4 s">Saint-Symphorien-sur-Saône</td>
+            <td class="column8 style7 s">Varanges</td>
+             
+             
+             
+          </tr>
+          <tr class="row11">
+            <td class="column0 style3 s">Arceau</td>
+            <td class="column1 style4 s">Boux-sous-Salmaise</td>
+            <td class="column2 style4 s">Clénay</td>
+            <td class="column3 style4 s">Fixin</td>
+            <td class="column4 style4 s">Labergement-Foigney</td>
+            <td class="column5 style4 s">Meuilley</td>
+            <td class="column6 style4 s">Pont</td>
+            <td class="column7 style4 s">Saint-Usage</td>
+            <td class="column8 style5 s">Varois-et-Chaignot</td>
+             
+             
+             
+          </tr>
+          <tr class="row12">
+            <td class="column0 style3 s">Arcenant</td>
+            <td class="column1 style4 s">Brain</td>
+            <td class="column2 style4 s">Cléry</td>
+            <td class="column3 style4 s">Flacey</td>
+            <td class="column4 style6 s">Labergement-lès-Auxonne</td>
+            <td class="column5 style6 s">Meulson</td>
+            <td class="column6 style4 s">Pontailler-sur-Saône</td>
+            <td class="column7 style4 s">Saint-Victor-sur-Ouche</td>
+            <td class="column8 style7 s">Vaux-Saules</td>
+             
+             
+             
+          </tr>
+          <tr class="row13">
+            <td class="column0 style8 s">Arcey</td>
+            <td class="column1 style4 s">Brazey-en-Plaine</td>
+            <td class="column2 style6 s">Collonges-lès-Bévy</td>
+            <td class="column3 style4 s">Flagey-Echézeaux</td>
+            <td class="column4 style4 s">Labruyère</td>
+            <td class="column5 style4 s">Minot</td>
+            <td class="column6 style4 s">Pont-et-Massène</td>
+            <td class="column7 style4 s">Salives</td>
+            <td class="column8 style7 s">Velars-sur-Ouche</td>
+             
+             
+             
+          </tr>
+          <tr class="row14">
+            <td class="column0 style3 s">Arc-sur-Tille</td>
+            <td class="column1 style4 s">Brémur-et-Vaurois</td>
+            <td class="column2 style4 s">Collonges-lès-Premières</td>
+            <td class="column3 style6 s">Flagey-lès-Auxonne</td>
+            <td class="column4 style4 s">Lamarche-sur-Saône</td>
+            <td class="column5 style4 s">Mirebeau-sur-Bèze</td>
+            <td class="column6 style4 s">Posanges</td>
+            <td class="column7 style6 s">Salmaise</td>
+            <td class="column8 style7 s">Velogny</td>
+             
+             
+             
+          </tr>
+          <tr class="row15">
+            <td class="column0 style8 s">Argilly</td>
+            <td class="column1 style4 s">Bressey-sur-Tille</td>
+            <td class="column2 style4 s">Comblanchien</td>
+            <td class="column3 style4 s">Flammerans</td>
+            <td class="column4 style4 s">Lamargelle</td>
+            <td class="column5 style4 s">Missery</td>
+            <td class="column6 style4 s">Pouillenay</td>
+            <td class="column7 style4 s">Samerey</td>
+            <td class="column8 style7 s">Venarey-les-Laumes</td>
+             
+             
+             
+          </tr>
+          <tr class="row16">
+            <td class="column0 style3 s">Arnay-sous-Vitteaux</td>
+            <td class="column1 style4 s">Bretenière</td>
+            <td class="column2 style4 s">Corcelles-lès-Cîteaux</td>
+            <td class="column3 style4 s">Flavignerot</td>
+            <td class="column4 style4 s">Lantenay</td>
+            <td class="column5 style6 s">Moitron</td>
+            <td class="column6 style4 s">Pouilly-sur-Vingeanne</td>
+            <td class="column7 style4 s">Saulon-la-Chapelle</td>
+            <td class="column8 style7 s">Verdonnet</td>
+             
+             
+             
+          </tr>
+          <tr class="row17">
+            <td class="column0 style8 s">Arrans</td>
+            <td class="column1 style4 s">Bretigny</td>
+            <td class="column2 style4 s">Corcelles-les-Monts</td>
+            <td class="column3 style4 s">Flavigny-sur-Ozerain</td>
+            <td class="column4 style4 s">Lanthes</td>
+            <td class="column5 style4 s">Moloy</td>
+            <td class="column6 style4 s">Prâlon</td>
+            <td class="column7 style6 s">Saulon-la-Rue</td>
+            <td class="column8 style7 s">Vernot</td>
+             
+             
+             
+          </tr>
+          <tr class="row18">
+            <td class="column0 style8 s">Asnières-en-Montagne</td>
+            <td class="column1 style4 s">Brochon</td>
+            <td class="column2 style4 s">Corgoloin</td>
+            <td class="column3 style4 s">Fleurey-sur-Ouche</td>
+            <td class="column4 style4 s">Laperrière-sur-Saône</td>
+            <td class="column5 style4 s">Montagny-lès-Seurre</td>
+            <td class="column6 style4 s">Précy-sous-Thil</td>
+            <td class="column7 style4 s">Saulx-le-Duc</td>
+            <td class="column8 style7 s">Véronnes</td>
+             
+             
+             
+          </tr>
+          <tr class="row19">
+            <td class="column0 style3 s">Asnières-lès-Dijon</td>
+            <td class="column1 style4 s">Brognon</td>
+            <td class="column2 style4 s">Couchey</td>
+            <td class="column3 style4 s">Foissy</td>
+            <td class="column4 style4 s">Le Meix</td>
+            <td class="column5 style10 s">Montigny-Mornay-Villeneuve-sur-Vingeanne</td>
+            <td class="column6 style4 s">Premeaux-Prissey</td>
+            <td class="column7 style4 s">Saussy</td>
+            <td class="column8 style7 s">Verrey-sous-Drée</td>
+             
+             
+             
+          </tr>
+          <tr class="row20">
+            <td class="column0 style3 s">Athée</td>
+            <td class="column1 style4 s">Broin</td>
+            <td class="column2 style4 s">Courcelles-lès-Semur</td>
+            <td class="column3 style4 s">Foncegrive</td>
+            <td class="column4 style4 s">Lechâtelet</td>
+            <td class="column5 style4 s">Montlay-en-Auxois</td>
+            <td class="column6 style4 s">Premières</td>
+            <td class="column7 style4 s">Savigny-le-Sec</td>
+            <td class="column8 style7 s">Verrey-sous-Salmaise</td>
+             
+             
+             
+          </tr>
+          <tr class="row21">
+            <td class="column0 style3 s">Aubigny-en-Plaine</td>
+            <td class="column1 style4 s">Broindon</td>
+            <td class="column2 style6 s">Courlon</td>
+            <td class="column3 style4 s">Fontaine-Française</td>
+            <td class="column4 style6 s">Léry</td>
+            <td class="column5 style4 s">Montmançon</td>
+            <td class="column6 style4 s">Prenois</td>
+            <td class="column7 style4 s">Savigny-sous-Mâlain</td>
+            <td class="column8 style7 s">Vesvres</td>
+             
+             
+             
+          </tr>
+          <tr class="row22">
+            <td class="column0 style3 s">Aubigny-lès-Sombernon</td>
+            <td class="column1 style4 s">Buncey</td>
+            <td class="column2 style4 s">Courtivron</td>
+            <td class="column3 style6 s">Fontaine-lès-Dijon</td>
+            <td class="column4 style4 s">Les Maillys</td>
+            <td class="column5 style4 s">Montmoyen</td>
+            <td class="column6 style4 s">Puits</td>
+            <td class="column7 style4 s">Savoisy</td>
+            <td class="column8 style7 s">Vic-sous-Thil</td>
+             
+             
+             
+          </tr>
+          <tr class="row23">
+            <td class="column0 style3 s">Auvillars-sur-Saône</td>
+            <td class="column1 style4 s">Bure-les-Templiers</td>
+            <td class="column2 style4 s">Couternon</td>
+            <td class="column3 style4 s">Fontaines-les-Sèches</td>
+            <td class="column4 style4 s">Licey-sur-Vingeanne</td>
+            <td class="column5 style4 s">Montot</td>
+            <td class="column6 style4 s">Quemigny-Poisot</td>
+            <td class="column7 style4 s">Savolles</td>
+            <td class="column8 style5 s">Vieilmoulin</td>
+             
+             
+             
+          </tr>
+          <tr class="row24">
+            <td class="column0 style3 s">Auxonne</td>
+            <td class="column1 style9 s">Busseaut</td>
+            <td class="column2 style4 s">Crécey-sur-Tille</td>
+            <td class="column3 style6 s">Fontenelle</td>
+            <td class="column4 style4 s">Longchamp</td>
+            <td class="column5 style4 s">Morey-Saint-Denis</td>
+            <td class="column6 style6 s">Quemigny-sur-Seine</td>
+            <td class="column7 style6 s">Savouges</td>
+            <td class="column8 style7 s">Vielverge</td>
+             
+             
+             
+          </tr>
+          <tr class="row25">
+            <td class="column0 style3 s">Avelanges</td>
+            <td class="column1 style6 s">Busserotte-et-Montenaille</td>
+            <td class="column2 style4 s">Crimolois</td>
+            <td class="column3 style4 s">Fraignot-et-Vesvrotte</td>
+            <td class="column4 style4 s">Longeault</td>
+            <td class="column5 style6 s">Mussy-la-Fosse</td>
+            <td class="column6 style4 s">Quetigny</td>
+            <td class="column7 style4 s">Segrois</td>
+            <td class="column8 style7 s">Viévigne</td>
+             
+             
+             
+          </tr>
+          <tr class="row26">
+            <td class="column0 style8 s">Avosnes</td>
+            <td class="column1 style4 s">Bussières</td>
+            <td class="column2 style4 s">Cuiserey</td>
+            <td class="column3 style4 s">Francheville</td>
+            <td class="column4 style4 s">Longecourt-en-Plaine</td>
+            <td class="column5 style4 s">Nesle-<span style="color:#000000; font-family:'Calibri'; font-size:11pt">et-Massoult 1</span></td>
+            <td class="column6 style4 s">Quincey</td>
+            <td class="column7 style4 s">Selongey</td>
+            <td class="column8 style5 s">Villargoix</td>
+             
+             
+             
+          </tr>
+          <tr class="row27">
+            <td class="column0 style3 s">Avot</td>
+            <td class="column1 style6 s">Bussy-la-Pesle</td>
+            <td class="column2 style4 s">Curley</td>
+            <td class="column3 style6 s">Franxault</td>
+            <td class="column4 style4 s">Longvic</td>
+            <td class="column5 style4 s">Neuilly-lès-Dijon</td>
+            <td class="column6 style4 s">Remilly-en-Montagne</td>
+            <td class="column7 style4 s">Semezanges</td>
+            <td class="column8 style5 s">Villars-et-Villenotte</td>
+             
+             
+             
+          </tr>
+          <tr class="row28">
+            <td class="column0 style3 s">Bagnot</td>
+            <td class="column1 style4 s">Bussy-le-Grand</td>
+            <td class="column2 style4 s">Curtil-Saint-Seine</td>
+            <td class="column3 style4 s">Frénois</td>
+            <td class="column4 style4 s">Losne</td>
+            <td class="column5 style4 s">Nod-sur-Seine</td>
+            <td class="column6 style4 s">Remilly-sur-Tille</td>
+            <td class="column7 style6 s">Semond</td>
+            <td class="column8 style7 s">Villars-Fontaine</td>
+             
+            <td class="column10 style16 null"></td>
+             
+          </tr>
+          <tr class="row29">
+            <td class="column0 style3 s">Barbirey-sur-Ouche</td>
+            <td class="column1 style4 s">Cessey-sur-Tille</td>
+            <td class="column2 style4 s">Curtil-Vergy</td>
+            <td class="column3 style6 s">Fresnes</td>
+            <td class="column4 style6 s">Lucenay-le-Duc</td>
+            <td class="column5 style4 s">Nogent-lès-Montbard</td>
+            <td class="column6 style4 s">Renève</td>
+            <td class="column7 style4 s">Sennecey-lès-Dijon</td>
+            <td class="column8 style7 s">Villeberny</td>
+             
+             
+             
+          </tr>
+          <tr class="row30">
+            <td class="column0 style3 s">Barges</td>
+            <td class="column1 style4 s">Chaignay</td>
+            <td class="column2 style4 s">Cussey-les-Forges</td>
+            <td class="column3 style4 s">Fussey</td>
+            <td class="column4 style4 s">Lux</td>
+            <td class="column5 style4 s">Noiron-sous-Gevrey</td>
+            <td class="column6 style6 s">Reulle-Vergy</td>
+            <td class="column7 style4 s">Soirans</td>
+            <td class="column8 style7 s">Villebichot</td>
+             
+             
+             
+          </tr>
+          <tr class="row31">
+            <td class="column0 style3 s">Barjon</td>
+            <td class="column1 style4 s">Chambeire</td>
+            <td class="column2 style4 s">Daix</td>
+            <td class="column3 style4 s">Gemeaux</td>
+            <td class="column4 style6 s">Magnien</td>
+            <td class="column5 style4 s">Noiron-sur-Bèze</td>
+            <td class="column6 style6 s">Rochefort-sur-Brévon</td>
+            <td class="column7 style4 s">Soissons-sur-Nacey</td>
+            <td class="column8 style7 s">Villecomte</td>
+             
+             
+             
+          </tr>
+          <tr class="row32">
+            <td class="column0 style3 s">Baubigny</td>
+            <td class="column1 style4 s">Chamblanc</td>
+            <td class="column2 style4 s">Dampierre-en-Montagne</td>
+            <td class="column3 style4 s">Genlis</td>
+            <td class="column4 style6 s">Magny-Lambert</td>
+            <td class="column5 style4 s">Norges-la-Ville</td>
+            <td class="column6 style4 s">Rouvres-en-Plaine</td>
+            <td class="column7 style4 s">Sombernon</td>
+            <td class="column8 style7 s">Villeferry</td>
+             
+             
+             
+          </tr>
+          <tr class="row33">
+            <td class="column0 style3 s">Baulme-la-Roche</td>
+            <td class="column1 style4 s">Chamboeuf</td>
+            <td class="column2 style4 s">Dampierre-et-Flée</td>
+            <td class="column3 style6 s">Gergueil</td>
+            <td class="column4 style6 s">Magny-la-Ville</td>
+            <td class="column5 style4 s">Nuits-Saint-Georges</td>
+            <td class="column6 style4 s">Ruffey-lès-Echirey</td>
+            <td class="column7 style6 s">Souhey</td>
+            <td class="column8 style7 s">Villers-la-Faye</td>
+             
+             
+             
+          </tr>
+          <tr class="row34">
+            <td class="column0 style8 s">Beaulieu</td>
+            <td class="column1 style4 s">Chambolle-Musigny</td>
+            <td class="column2 style4 s">Détain<span style="color:#000000; font-family:'Calibri'; font-size:11pt">-et-Bruant</span></td>
+            <td class="column3 style6 s">Gerland</td>
+            <td class="column4 style4 s">Magny-lès-Aubigny</td>
+            <td class="column5 style4 s">Oigny</td>
+            <td class="column6 style4 s">Sacquenay</td>
+            <td class="column7 style6 s">Source-Seine</td>
+            <td class="column8 style7 s">Villers-les-Pots</td>
+             
+            <td class="column10 style17 null"></td>
+             
+          </tr>
+          <tr class="row35">
+            <td class="column0 style3 s">Beaumont-sur-Vingeanne</td>
+            <td class="column1 style4 s">Chamesson</td>
+            <td class="column2 style4 s">Diénay</td>
+            <td class="column3 style4 s">Gevrey-Chambertin</td>
+            <td class="column4 style4 s">Magny-lès-Villers</td>
+            <td class="column5 style4 s">Oisilly</td>
+            <td class="column6 style4 s">Saffres</td>
+            <td class="column7 style4 s">Spoy</td>
+            <td class="column8 style5 s">Villers-Rotin</td>
+             
+            <td class="column10 style17 null"></td>
+             
+          </tr>
+          <tr class="row36">
+            <td class="column0 style3 s">Beaunotte</td>
+            <td class="column1 style4 s">Champagne-sur-Vingeanne</td>
+            <td class="column2 style4 s">Dijon</td>
+            <td class="column3 style4 s">Gilly-lès-Cîteaux</td>
+            <td class="column4 style4 s">Magny-Montarlot</td>
+            <td class="column5 style4 s">Orain</td>
+            <td class="column6 style4 s">Saint-Anthot</td>
+            <td class="column7 style4 s">Talmay</td>
+            <td class="column8 style7 s">Villey-sur-Tille</td>
+             
+            <td class="column10 style17 null"></td>
+             
+          </tr>
+          <tr class="row37">
+            <td class="column0 style3 s">Beire-le-Châtel</td>
+            <td class="column1 style4 s">Champagny</td>
+            <td class="column2 style4 s">Drambon</td>
+            <td class="column3 style4 s">Gissey-sous-Flavigny</td>
+            <td class="column4 style4 s">Magny-Saint-Médard</td>
+            <td class="column5 style4 s">Orgeux</td>
+            <td class="column6 style4 s">Saint-Apollinaire</td>
+            <td class="column7 style4 s">Tanay</td>
+            <td class="column8 style7 s">Villotte-Saint-Seine</td>
+             
+            <td class="column10 style17 null"></td>
+             
+          </tr>
+          <tr class="row38">
+            <td class="column0 style3 s">Beire-le-Fort</td>
+            <td class="column1 style4 s">Champdôtre</td>
+            <td class="column2 style4 s">Drée</td>
+            <td class="column3 style4 s">Glanon</td>
+            <td class="column4 style4 s">Magny-sur-Tille</td>
+            <td class="column5 style6 s">Origny</td>
+            <td class="column6 style4 s">Saint-Bernard</td>
+            <td class="column7 style4 s">Tarsul</td>
+            <td class="column8 style7 s">Villy-en-Auxois</td>
+             
+             
+             
+          </tr>
+          <tr class="row39">
+            <td class="column0 style3 s">Bellefond</td>
+            <td class="column1 style6 s">Champrenault</td>
+            <td class="column2 style6 s">Duesme</td>
+            <td class="column3 style4 s">Grancey-le-Château<span style="color:#000000; font-family:'Calibri'; font-size:11pt">-Neuvelle</span></td>
+            <td class="column4 style4 s">Mâlain</td>
+            <td class="column5 style6 s">Orret</td>
+            <td class="column6 style4 s">Saint-Broing-les-Moines</td>
+            <td class="column7 style4 s">Tart-l'Abbaye</td>
+            <td class="column8 style7 s">Vitteaux</td>
+             
+             
+             
+          </tr>
+          <tr class="row40">
+            <td class="column0 style3 s">Belleneuve</td>
+            <td class="column1 style6 s">Charencey</td>
+            <td class="column2 style4 s">Échalot</td>
+            <td class="column3 style4 s">Grenant-lès-Sombernon</td>
+            <td class="column4 style6 s">Marandeuil</td>
+            <td class="column5 style6 s">Orville</td>
+            <td class="column6 style4 s">Sainte-Colombe-en-Auxois</td>
+            <td class="column7 style4 s">Tart-le-Bas</td>
+            <td class="column8 style7 s">Vonges</td>
+             
+             
+             
+          </tr>
+          <tr class="row41">
+            <td class="column0 style8 s">Bellenod-sur-Seine</td>
+            <td class="column1 style4 s">Charigny</td>
+            <td class="column2 style4 s">Échannay</td>
+            <td class="column3 style4 s">Grésigny-Sainte-Reine</td>
+            <td class="column4 style6 s">Marcellois</td>
+            <td class="column5 style4 s">Ouges</td>
+            <td class="column6 style6 s">Sainte-Marie-sur-Ouche</td>
+            <td class="column7 style4 s">Tart-le-Haut</td>
+            <td class="column8 style7 s">Vosne-Romanée</td>
+             
+             
+             
+          </tr>
+          <tr class="row42">
+            <td class="column0 style3 s">Beneuvre</td>
+            <td class="column1 style4 s">Charmes</td>
+            <td class="column2 style4 s">Échenon</td>
+            <td class="column3 style4 s">Grosbois-en-Montagne</td>
+            <td class="column4 style4 s">Marcilly-et-Dracy</td>
+            <td class="column5 style4 s">Pagny-la-Ville</td>
+            <td class="column6 style4 s">Saint-Euphrône</td>
+            <td class="column7 style4 s">Tellecey</td>
+            <td class="column8 style5 s">Voudenay</td>
+             
+             
+             
+          </tr>
+          <tr class="row43">
+            <td class="column0 style3 s">Bessey-lès-Cîteaux</td>
+            <td class="column1 style4 s">Chaugey</td>
+            <td class="column2 style4 s">Échevannes</td>
+            <td class="column3 style4 s">Grosbois-lès-Tichey</td>
+            <td class="column4 style4 s">Marcilly-sur-Tille</td>
+            <td class="column5 style4 s">Pagny-le-Château</td>
+            <td class="column6 style6 s">Saint-Germain-le-Rocheux</td>
+            <td class="column7 style4 s">Ternant</td>
+            <td class="column8 style7 s">Vougeot</td>
+             
+             
+             
+          </tr>
+          <tr class="row44">
+            <td class="column0 style8 s">Bévy</td>
+            <td class="column1 style4 s">Charrey-sur-Saône</td>
+            <td class="column2 style4 s">Échevronne</td>
+            <td class="column3 style6 s">Hauteroche</td>
+            <td class="column4 style4 s">Marey-lès-Fussey</td>
+            <td class="column5 style4 s">Panges</td>
+            <td class="column6 style6 s">Saint-Hélier</td>
+            <td class="column7 style4 s">Terrefondrée</td>
+            <td class="column8 style24 null"></td>
+             
+             
+             
+          </tr>
+          <tr class="row45">
+            <td class="column0 style3 s">Bèze</td>
+            <td class="column1 style6 s">Chassey</td>
+            <td class="column2 style4 s">Échigey</td>
+            <td class="column3 style6 s">Hauteville-lès-Dijon</td>
+            <td class="column4 style4 s">Marey-sur-Tille</td>
+            <td class="column5 style4 s">Pasques</td>
+            <td class="column6 style4 s">Saint-Jean-de-Boeuf</td>
+            <td class="column7 style4 s">Thenissey</td>
+            <td class="column8 style24 null"></td>
+             
+             
+             
+          </tr>
+          <tr class="row46">
+            <td class="column0 style3 s">Bézouotte</td>
+            <td class="column1 style4 s">Chaume-et-Courchamp</td>
+            <td class="column2 style4 s">Épagny</td>
+            <td class="column3 style4 s">Heuilley-sur-Saône</td>
+            <td class="column4 style4 s">Marigny-le-Cahouët</td>
+            <td class="column5 style4 s">Pellerey</td>
+            <td class="column6 style4 s">Saint-Jean-de-Losne</td>
+            <td class="column7 style4 s">Thorey-en-Plaine</td>
+            <td class="column8 style24 null"></td>
+             
+            <td class="column10 style0 null"></td>
+             
+          </tr>
+          <tr class="row47">
+            <td class="column0 style8 s">Billey</td>
+            <td class="column1 style6 s">Chaume-lès-Baigneux</td>
+            <td class="column2 style4 s">Épernay-sous-Gevrey</td>
+            <td class="column3 style22 s">Is-sur-Tille</td>
+            <td class="column4 style4 s">Marliens</td>
+            <td class="column5 style4 s">Perrigny-lès-Dijon</td>
+            <td class="column6 style4 s">Saint-Julien</td>
+            <td class="column7 style4 s">Tichey</td>
+            <td class="column8 style24 null"></td>
+             
+            <td class="column10 style0 null"></td>
+             
+          </tr>
+          <tr class="row48">
+            <td class="column0 style23 s">Billy-lès-Chanceaux</td>
+            <td class="column1 style11 s">Chaux</td>
+            <td class="column2 style15 s">Éringes</td>
+            <td class="column3 style11 s">Izeure</td>
+            <td class="column4 style11 s">Marmagne</td>
+            <td class="column5 style11 s">Perrigny-sur-l'Ognon</td>
+            <td class="column6 style11 s">Saint-Léger-Triey</td>
+            <td class="column7 style11 s">Til-Châtel</td>
+            <td class="column8 style12 n">427</td>
+             
+             
+             
+          </tr>
+          <tr class="row49">
+            <td class="column0 style1 null"></td>
+            <td class="column1 style2 null"></td>
+            <td class="column2 style2 null"></td>
+            <td class="column3 style2 null"></td>
+            <td class="column4 style2 null"></td>
+            <td class="column5 style2 null"></td>
+            <td class="column6 style1 null"></td>
+            <td class="column7 style2 null"></td>
+            <td class="column8 style2 null"></td>
+            <td class="column9 style14 null"></td>
+             
+             
+          </tr>
+          <tr class="row50">
+            <td class="column0 style21 s style21" colspan="2"><a href="index.html" title="">Retour à la page du département de la Côte d'Or</a></td>
+            <td class="column2 style1 null"></td>
+            <td class="column3 style1 null"></td>
+            <td class="column4 style1 null"></td>
+            <td class="column5 style1 null"></td>
+            <td class="column6 style1 null"></td>
+            <td class="column7 style13 s" colspan="2"><a href="..\AFAIRE\Mes communes à faire- accueil.htm" title="">retour à la carte des départements incomplets</a></td>
+             
+             
+             
+          </tr>
+          <tr class="row51">
+            <td class="column0 style1 null"></td>
+            <td class="column1 style1 null"></td>
+            <td class="column2 style1 null"></td>
+            <td class="column3 style1 null"></td>
+            <td class="column4 style1 null"></td>
+            <td class="column5 style1 null"></td>
+            <td class="column6 style1 null"></td>
+            <td class="column7 style1 null"></td>
+            <td class="column8 style1 null"></td>
+             
+             
+             
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
