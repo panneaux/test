@@ -1,4 +1,5 @@
 name: GitHub Pages deploy
+
 on:
   push:
     branches:
