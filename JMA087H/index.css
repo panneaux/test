@@ -5,6 +5,7 @@
 
 td.index_table_cell
 {
+  width: 50%;
   padding: 5px;
   border: solid 1px #000000;
 }
